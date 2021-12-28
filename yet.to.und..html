@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Form</title>
+    <script>
+        function setfName() {
+            var fName=document.getElementById ("name");
+            var mName= document.getElementById("middlename");
+            var lName= document.getElementById("lastname");
+            var fullName= document.getElementById("fullname");
+
+            fullName.value= fName.value+" "+mName.value+" "+lName.value     
+        }
+        
+            
+        
+            
+        
+        </script>
+</head>
+<body>
+    <form>
+        
+    <h1>Emploee Details<h1>
+
+        <hr>
+
+        <h3>Personal Info</h3>
+
+        <label>First Name:
+        <input type="text" id="name">
+        </label>
+         <br> <br>
+
+         <label>Middle Name:
+             <input type="text" id="middlename">
+         </label>
+         <br> <br>
+    
+        <label>Last Name:
+        <input type="text" id="lastname">
+        </label> <br> <br>
+        <label>Full Name:<input type="text" id="fullname">
+        </label> <br> <br>
+        <button onclick="setfName()">Full Name</button>
+
+        <button>clear</button>
+    <br>
+    <br>
+    
+</form>
+                                    
+</body>
+</html>
